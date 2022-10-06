@@ -34,11 +34,11 @@
 			</configuration>
                 <executions>
                     <execution>
-<!--                         <phase>package</phase> -->
-<!--                         <goals> -->
-<!--                             <goal>deploy</goal> -->
-<!--                         </goals> -->
-                    </execution>
+            		<phase>install</phase>
+            		<goals>
+                		<goal>deploy</goal>
+            		</goals>
+        	    </execution>
                 </executions>
             </plugin>
 	</plugins>
