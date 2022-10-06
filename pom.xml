@@ -19,28 +19,14 @@
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 </properties>
   
-<build>
+   <build>
 		<finalName>maven-ee-application</finalName>
 	<plugins>
   		<plugin>
 			<groupId>org.wildfly.plugins</groupId>
 			<artifactId>wildfly-maven-plugin</artifactId>
 			<version>1.0.0.Final</version>
-			<configuration>
-			    <hostname>${wildfly-hostname}</hostname>
-			    <port>${wildfly-port}</port>
-			    <username>${wildfly-username}</username>
-			    <password>${wildfly-password}</password>
-			</configuration>
-                <executions>
-                    <execution>
-            		<phase>install</phase>
-            		<goals>
-                		<goal>deploy</goal>
-            		</goals>
-        	    </execution>
-                </executions>
-            </plugin>
+		</plugin>
 	</plugins>
-		</build>
+  </build>
 </project>
