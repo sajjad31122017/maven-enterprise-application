@@ -27,8 +27,8 @@
 			<artifactId>wildfly-maven-plugin</artifactId>
 			<version>1.0.0.Final</version>
 			<configuration>
-			    <username>wildfly</username>
-			    <password>wildfly</password>
+			    <username>testuser</username>
+			    <password>testpassword</password>
 			</configuration>
 		</plugin>
 	</plugins>
