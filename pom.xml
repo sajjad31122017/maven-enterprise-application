@@ -21,16 +21,17 @@
   
 <build>
 		<finalName>maven-ee-application</finalName>
-  <plugin>
-                <groupId>org.wildfly.plugins</groupId>
-                <artifactId>wildfly-maven-plugin</artifactId>
-                <version>1.0.0.Final</version>
-                <configuration>
-                    <hostname>${wildfly-hostname}</hostname>
-                    <port>${wildfly-port}</port>
-                    <username>${wildfly-username}</username>
-                    <password>${wildfly-password}</password>
-                </configuration>
+	<plugins>
+  		<plugin>
+			<groupId>org.wildfly.plugins</groupId>
+			<artifactId>wildfly-maven-plugin</artifactId>
+			<version>1.0.0.Final</version>
+			<configuration>
+			    <hostname>${wildfly-hostname}</hostname>
+			    <port>${wildfly-port}</port>
+			    <username>${wildfly-username}</username>
+			    <password>${wildfly-password}</password>
+			</configuration>
                 <executions>
                     <execution>
 <!--                         <phase>package</phase> -->
@@ -40,5 +41,6 @@
                     </execution>
                 </executions>
             </plugin>
-	</build>
+	</plugins>
+		</build>
 </project>
